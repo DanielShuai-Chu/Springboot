@@ -12,7 +12,6 @@ spring:
       max-idle: 8
       min-idle: 8
       initial-size: 10
-    config:
   redis:
     host: 127.0.0.1
     port: 6379
@@ -24,6 +23,9 @@ spring:
         max-wait: 300ms
         max-idle: 16
         min-idle: 8
+  freemarker:
+    suffix: .html
+    template-loader-path: classpath:/templates/
 
 #mybatis
 mybatis-plus:
